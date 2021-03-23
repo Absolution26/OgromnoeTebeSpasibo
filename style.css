@@ -176,7 +176,7 @@
 }
 
 .block__right .checkbox:nth-child(2) .checkbox__input:checked + .checkbox__box { 
-    background-image:url(img/friends_waterfall.jpg);
+    background-image:url(img/200223400414_135637.jpg);
     border:3px solid cyan;
 }
 .block__right .checkbox:nth-child(3) .checkbox__input:checked + .checkbox__box {
