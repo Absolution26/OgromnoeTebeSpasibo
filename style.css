@@ -67,6 +67,7 @@
     border:3px solid yellowgreen;
     color:transparent;
     transition: all 0.3s ease-in;
+    transform:rotate(360deg);
 }
 
 .checkbox:first-child .checkbox__input + .checkbox__box { 
@@ -78,22 +79,27 @@
 .checkbox:nth-child(2) .checkbox__input:checked + .checkbox__box { 
     background-image:url(img/Family_woods.jpg);
     border:3px solid cyan;
-    
-    
+    transform:rotate(360deg);
 }
 .checkbox:nth-child(3) .checkbox__input:checked + .checkbox__box {
     background-image:url(img/LF_river.jpg);
     border:3px solid green;
+    transform:rotate(360deg);
 }
 
 .checkbox:nth-child(4) .checkbox__input:checked + .checkbox__box {
     background-image:url(img/Young_bandit.jpg);
     border:3px solid yellow;
+    transform:rotate(360deg);
+}
+.block__left .checkbox:nth-child(4) .checkbox__input:checked + .checkbox__box {
+    transform:rotate(270deg);
 }
 
 .checkbox:nth-child(5) .checkbox__input:checked + .checkbox__box {
     background-image:url(img/Bro_spring.jpg);
     border:3px solid black;
+    transform:rotate(360deg);
 }
 
 .block__right .checkbox:first-child .checkbox__box{
@@ -122,6 +128,13 @@
     font-family: 'Playfair Display SC', serif;
     font-size: 15px;
 }
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    top:175px;
+}
 
 .center__photo {
     width:250px;
@@ -131,8 +144,16 @@
     background: linear-gradient(to right, red, purple);
     padding:5px;
 }
+
 .center__item--right .center__photo {
     background: linear-gradient(to right, green, orange);
+}
+
+.center__item:first-child .center__photo {
+    transform: rotate(90deg);
+    width:400px;
+    position:relative;
+    bottom:85px;
 }
 
 .center__item:nth-child(3) .center__photo {
@@ -160,6 +181,9 @@
 .center__item--right:nth-child(8) .center__photo {
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(105, 96, 96));
 }
+.center__item--right:nth-child(10) .center__photo {
+    background: linear-gradient(to top, rgb(19, 78, 1), rgb(12, 46, 59));
+}
 
 .center__item {
     position:relative;
@@ -182,6 +206,7 @@
 .block__right .checkbox:nth-child(3) .checkbox__input:checked + .checkbox__box {
     background-image:url(img/Friends_lviv.jpg);
     border:3px solid green;
+    transform:rotate(90deg);
 }
 
 .block__right .checkbox:nth-child(4) .checkbox__input:checked + .checkbox__box {
@@ -209,6 +234,10 @@
         font-family: 'Playfair Display SC', serif;
         padding: 15px;
         font-size: 14px;
+    }
+    .center__item:first-child .center__photo {
+        width:290px;
+        bottom:60px;
     }
     .center__item{
         right:25px;
@@ -241,6 +270,9 @@
     .checkbox:nth-child(2) .checkbox__box {
         font-size: 15px;
     }
+    .block__right .checkbox:nth-child(2) .checkbox__box {
+        font-size: 9px;
+    }
     .checkbox:nth-child(3) .checkbox__box {
         font-size: 13px;
     }    
@@ -256,8 +288,8 @@
         font-size: 9px;
     }
     .center{
-        position:absolute;
-        top:900px;
+        position: absolute;
+        top: 1000px;
     }
     .center__photo{
         width:150px;
@@ -267,6 +299,10 @@
     }
     .center__item--right{
         left: 65px;
+    }
+    .center__item:first-child .center__photo {
+        width: 259px;
+        bottom: 50px;
     }
 
     .checkbox:nth-child(5) .checkbox__box {
